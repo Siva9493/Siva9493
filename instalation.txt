@@ -1,0 +1,29 @@
+sudo yum install java-1.8.0-openjdk-devel -y
+java -version
+cmvn --vesrion
+sudo amazon-linux-extras install epel -y
+sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+sudo yum install jenkins -y
+systemctl status jenkins
+systemctl start jenkins
+ps -ef | grep jenkins
+
+
+
+
+
+s
+from Soma Sekhar Kuruva to everyone:    7:16 AM
+#!/bin/bash
+for i in {1..10}
+do
+        echo
+        echo "$i table"
+        echo
+        for j in {1..10}
+        do
+                declare -i x=$i*$j
+                echo $i*$j=$x
+        done
+done
